@@ -1,6 +1,6 @@
-# NFS Storage
+# Apache Reverse Proxy
 
-This is an automated solution for NFS Storage created through Vagrant. Follow the steps below:
+This is an automated solution for Apache Reverse Proxy created through Vagrant. Follow the steps below:
  - clone the repository; 
  - open the directory in terminal;
  - execute the command `vagrant up`;
