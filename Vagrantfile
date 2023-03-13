@@ -21,10 +21,10 @@ Vagrant.configure("2") do |config|
     vm1.vm.hostname = "vm1"
     vm1.vm.network "private_network", ip: "192.168.100.161"
 #    vm1.vm.synced_folder "shared/", "/shared"
-    vm1.vm.provision "shell", path: "initial-config/fedora/add_hosts.sh"
-    vm1.vm.provision "shell", path: "initial-config/fedora/apache-server-setup.sh"
-    vm1.vm.provision "shell", path: "initial-config/fedora/virtual-hosts-setup.sh"
-    vm1.vm.provision "shell", path: "initial-config/fedora/ssl-setup.sh"
+    vm1.vm.provision "shell", path: "initial-config/add_hosts.sh"
+    vm1.vm.provision "shell", path: "initial-config/apache-server-setup.sh"
+    vm1.vm.provision "shell", path: "initial-config/virtual-hosts-setup.sh"
+    vm1.vm.provision "shell", path: "initial-config/ssl-setup.sh"
   end
   
   # CentOS Stream 8
@@ -34,9 +34,9 @@ Vagrant.configure("2") do |config|
     vm2.vm.hostname = "vm2"
     vm2.vm.network "private_network", ip: "192.168.100.162"
 #    vm2.vm.synced_folder "shared/", "/shared"
-    vm2.vm.provision "shell", path: "initial-config/fedora/add_hosts.sh"
-    vm2.vm.provision "shell", path: "initial-config/fedora/apache-server-setup.sh"
-    vm2.vm.provision "shell", path: "initial-config/fedora/reverse-proxy-setup.sh"
+    vm2.vm.provision "shell", path: "initial-config/add_hosts.sh"
+    vm2.vm.provision "shell", path: "initial-config/apache-server-setup.sh"
+    vm2.vm.provision "shell", path: "initial-config/reverse-proxy-setup.sh"
   end
 
   # Debian 11
@@ -45,10 +45,10 @@ Vagrant.configure("2") do |config|
     vm3.vm.hostname = "vm3"
     vm3.vm.network "private_network", ip: "192.168.100.163"
 #    vm3.vm.synced_folder "shared/", "/shared"
-    vm3.vm.provision "shell", path: "initial-config/debian/add_hosts.sh"
-    vm3.vm.provision "shell", path: "initial-config/debian/apache-server-setup.sh"
-    vm3.vm.provision "shell", path: "initial-config/debian/virtual-hosts-setup.sh"
-    vm3.vm.provision "shell", path: "initial-config/debian/ssl-setup.sh"
+    vm3.vm.provision "shell", path: "initial-config/add_hosts.sh"
+    vm3.vm.provision "shell", path: "initial-config/apache-server-setup.sh"
+    vm3.vm.provision "shell", path: "initial-config/virtual-hosts-setup.sh"
+    vm3.vm.provision "shell", path: "initial-config/ssl-setup.sh"
   end
   
   # Debian 11
@@ -57,9 +57,9 @@ Vagrant.configure("2") do |config|
     vm4.vm.hostname = "vm4"
     vm4.vm.network "private_network", ip: "192.168.100.164"
 #    vm4.vm.synced_folder "shared/", "/shared"
-    vm4.vm.provision "shell", path: "initial-config/debian/add_hosts.sh"
-    vm4.vm.provision "shell", path: "initial-config/debian/apache-server-setup.sh"
-    vm4.vm.provision "shell", path: "initial-config/debian/reverse-proxy-setup.sh"
+    vm4.vm.provision "shell", path: "initial-config/add_hosts.sh"
+    vm4.vm.provision "shell", path: "initial-config/apache-server-setup.sh"
+    vm4.vm.provision "shell", path: "initial-config/reverse-proxy-setup.sh"
   end
 
 end
